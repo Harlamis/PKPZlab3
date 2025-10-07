@@ -54,5 +54,6 @@ namespace PKPZlab3
                 Input.Clear();
             }
         }
+
     }
 }
