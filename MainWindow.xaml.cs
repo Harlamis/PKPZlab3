@@ -55,5 +55,13 @@ namespace PKPZlab3
             }
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string text = Input.Text;
+            var words = text.Split( new char[] {' ', ',', '.', '!', '?', ';', ':'}, StringSplitOptions.RemoveEmptyEntries);
+            var uniquewords = words.Distinct().ToArray();
+            string result = string.Join(" ", uniquewords);
+            Input.Text = result;
+        }
     }
 }
